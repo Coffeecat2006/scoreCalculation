@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增資料夾</title>
+</head>
+<body>
+    <h2>總平均分數計算公式:該月平時成績平均+額外加分</h2>
+    <h2>若有複數規則需要計算總平均分數，則以優先抽到的規則優先計算</h2>
+    <button onclick='randomRule()'>抽取規則</button>
+    <div id="rule"><h2>規則:</h2></div>
+    <div id="ruleinfo">規則介紹:</div>
+    <br>
+    <hr>
+    <div><h2>其他功能:</h2></div>
+    <h3>神秘骰子計算功能:</h3>
+    請輸入分數<input id="score" type="number">
+    <button onclick='calculate()'>計算</button>
+    <br>
+    計算結果<input id="anser" type="number">
+    <button onclick='copy("anser")'>複製</button>
+    <br>
+    <div id="prompt">提升分數%，提升倍率:</div>
+    <h3>永恆之數生成功能:</h3>
+    <button onclick='enternalNumber()'>生成永恆之數</button>
+    <br>
+    永恆之數:<input id="enternalNumber" type="number">
+    <button onclick='copy("enternalNumber")'>複製</button>
+    <h3>隨機交換功能:</h3>
+    開發中!
+    <h3>幸運輪盤功能:</h3>
+    <button onclick='luckyNumber()'>抽取幸運輪盤</button>
+    <br>
+    幸運輪盤:<input id="luckyNumber" type="number">
+    <button onclick='copy("luckyNumber")'>複製</button>
+    <h3>開發中規則(13規則):</h3>
+    <h3>開發中規則(14規則):</h3>
+</body>
+<script src="main.js"></script>
+</html>
