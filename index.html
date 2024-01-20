@@ -25,8 +25,11 @@
     <h3>永恆之數生成功能:</h3>
     <button onclick='enternalNumber()'>生成永恆之數</button>
     <br>
-    永恆之數:<input id="enternalNumber" type="number">
-    <button onclick='copy("enternalNumber")'>複製</button>
+    永恆之數(上限):<input id="enternalNumber1" type="number">
+    <button onclick='copy("enternalNumber1")'>複製</button>
+    <br>
+    永恆之數(下限):<input id="enternalNumber2" type="number">
+    <button onclick='copy("enternalNumber2")'>複製</button>
     <h3>隨機交換功能:</h3>
     開發中!
     <h3>幸運輪盤功能:</h3>
@@ -34,8 +37,17 @@
     <br>
     幸運輪盤:<input id="luckyNumber" type="number">
     <button onclick='copy("luckyNumber")'>複製</button>
-    <h3>開發中規則(13規則):</h3>
-    <h3>開發中規則(14規則):</h3>
+    <h3>祝福降臨抽取功能:</h3>
+    <button onclick='giftget()'>抽取</button>
+    <button onclick='giftup()'>強化</button>
+    <div id="gift">抽取到的祝福:</div>
+    <h3>風險骰子抽取功能:</h3>
+    開發中!
+    <h3>成績大樂透抽取功能:</h3>
+    <button onclick='randomscore()'>抽取</button>
+    <br>
+    成績大樂透:<input id="scorerandom" type="number">
+    <button onclick='copy("scorerandom")'>複製</button>
 </body>
 <script src="main.js"></script>
 </html>
