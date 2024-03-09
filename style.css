@@ -1,0 +1,69 @@
+.container {
+    text-align: center;
+    margin-top: 75px;
+    margin-left: 50px;
+  }
+  
+  .spinner-container {
+    position: relative;
+  }
+  
+  .spinner {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .number {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .number:nth-child(1) { transform: translate(-50%, -90%) rotate(0deg); }
+  .number:nth-child(2) { transform: translate(-50%, -90%) rotate(24deg); }
+  .number:nth-child(3) { transform: translate(-50%, -90%) rotate(48deg); }
+  .number:nth-child(4) { transform: translate(-50%, -90%) rotate(72deg); }
+  .number:nth-child(5) { transform: translate(-50%, -90%) rotate(96deg); }
+  .number:nth-child(6) { transform: translate(-50%, -90%) rotate(120deg); }
+  .number:nth-child(7) { transform: translate(-50%, -90%) rotate(144deg); }
+  .number:nth-child(8) { transform: translate(-50%, -90%) rotate(168deg); }
+  .number:nth-child(9) { transform: translate(-50%, -90%) rotate(192deg); }
+  .number:nth-child(10) { transform: translate(-50%, -90%) rotate(216deg); }
+  .number:nth-child(11) { transform: translate(-50%, -90%) rotate(240deg); }
+  .number:nth-child(12) { transform: translate(-50%, -90%) rotate(264deg); }
+  .number:nth-child(13) { transform: translate(-50%, -90%) rotate(288deg); }
+  .number:nth-child(14) { transform: translate(-50%, -90%) rotate(312deg); }
+  .number:nth-child(15) { transform: translate(-50%, -90%) rotate(336deg); }
+  
+  .pointer {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid black;
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    transform: translateY(-50%);
+  }
+  
+  .spin-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #num {
+    width: 50px;
+    height: 50px;
+    top: -50px;
+    line-height: 20px;
+    font-size: 40px;
+    text-align: center;
+  }

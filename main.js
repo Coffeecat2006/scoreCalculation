@@ -78,6 +78,7 @@ function randomRule(){
     var randRule = random(0,14);
     get("rule").innerHTML = "<h2>"+rule[randRule]+"</h2>";
     get("ruleinfo").innerHTML = ruleinfo[randRule];
+    get("num").innerHTML = randRule+1;
 }
 function enternalNumber(){
     get("enternalNumber1").value = 85+random(1,6);
@@ -105,3 +106,51 @@ function randomscore(){
         get("scorerandom").value = random(78,95);
     }
 }
+document.getElementById('spinBtn').addEventListener('click', function() {
+
+    this.disabled = true;
+  
+
+    setTimeout(function() {
+      document.getElementById('spinBtn').disabled = false;
+    }, 1000);
+  
+
+    var stopAngle = Math.floor(Math.random() * 360);
+  
+
+    var spinner = document.getElementById('spinner');
+  
+
+    spinner.style.transition = 'transform 1s ease-out';
+  
+
+    var currentRotation = getCurrentRotation(spinner);
+    var totalRotation = currentRotation + stopAngle;
+
+    rotateSpinner(spinner, totalRotation);
+    randomRule();
+  });
+
+  function getCurrentRotation(element) {
+    var st = window.getComputedStyle(element, null);
+    var tr = st.getPropertyValue('transform');
+    if (tr && tr !== 'none') {
+
+      var values = tr.split('(')[1];
+      values = values.split(')')[0];
+      values = values.split(',');
+      var a = values[0];
+      var b = values[1];
+      var angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+
+      return angle >= 0 ? angle : (angle + 360);
+    }
+    return 0;
+  }
+  
+
+  function rotateSpinner(element, angle) {
+    element.style.transform = 'rotate(' + angle + 'deg)';
+  }
+  

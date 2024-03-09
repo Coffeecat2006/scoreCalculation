@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>新增資料夾</title>
 </head>
 <body>
     <h2>總平均分數計算公式:該月平時成績平均+額外加分</h2>
     <h2>若有複數規則需要計算總平均分數，則以優先抽到的規則優先計算</h2>
-    <button onclick='randomRule()'>抽取規則</button>
+    <div class="container">
+        <div class="spinner-container">
+          <div id="spinner" class="spinner">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="number">10</div>
+            <div class="number">11</div>
+            <div class="number">12</div>
+            <div class="number">13</div>
+            <div class="number">14</div>
+            <div class="number">15</div>
+          </div>
+          <div id="num"></div>
+          <div id="pointer" class="pointer"></div>
+        </div>
+        <button id="spinBtn" class="spin-btn">轉盤</button>
+      </div>
     <div id="rule"><h2>規則:</h2></div>
     <div id="ruleinfo">規則介紹:</div>
     <br>
